@@ -1,0 +1,45 @@
+.All1{
+  position: absolute;
+  width: 100vw;
+}
+
+.passengertable{
+    position: absolute;
+    top: 200px;
+    
+    
+}
+
+.passengertable tr:nth-child(odd) {
+    background-color: #b8d3df99;
+  }
+  .passengertable th{
+
+    font-size: 20pxx;
+    text-align: left 7px ; 
+ 
+    font-family: 'Assistant', sans-serif;
+  }
+  .passengertable .passengertablehead{
+    position: absolute;
+    width: 100vw;
+  }
+  .deleteicon{
+    color: red;
+  }
+
+  .editicon{
+    color: blue;
+  }
+ 
+  .topInViewPassenger h3{
+    position: absolute;
+    top: 140px;
+
+    left: 600px;
+  }
+  .topInViewPassenger .bur{
+    position:absolute;
+    top: 140px;
+    right: 20px;
+  }

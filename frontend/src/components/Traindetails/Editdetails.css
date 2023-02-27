@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Averia+Serif+Libre&family=Bree+Serif&family=Enriqueta&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Rampart+One&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&family=Trirong:wght@100&display=swap');
+
+
+
+.backimg{
+    position: absolute;
+    z-index: -10;
+    background-image: url("https://media.timeout.com/images/104676547/image.jpg");
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    background-size: cover;
+}
+.TrainBody{
+    position:absolute;
+    top: 90px;
+    right: 300px;
+    background-color:#abf66eb9;
+    border-radius: 20px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 650px;
+    width: 930px;
+}
+.TrainBody h2{
+    position:absolute;
+    top: 50px;
+    left: 350px;
+    font-family: 'Assistant', sans-serif;
+}
+.Trainno{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+.Trainno input{
+   background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.Trainname{
+    position: absolute;
+    top: 100px;
+    right: 140px;
+}
+.Trainname input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.TrainStartPoint{
+    position: absolute;
+    top: 85px;
+    left: 70px;
+}
+.TrainStartPoint input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.TrainStartTime{
+    position: absolute;
+    top: 85px;
+    right: 70px;
+}
+.TrainStartTime input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.TrainEndPoint{
+    position: absolute;
+    top: 125px;
+    left: 70px;
+}
+.TrainEndPoint input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.TrainEndTime{
+    position: absolute;
+    top: 125px;
+    right: 70px;
+}
+.TrainEndTime input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.DistanceinKM{
+    position: absolute;
+    top: 205px;
+    left: 70px;
+}
+.DistanceinKM input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.Classes{
+    position: absolute;
+    top: 165px;
+    right: 70px;
+}
+.Classes input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.ServiceDays{
+    position: absolute;
+    top: 205px;
+    left: 70px;
+}
+.ServiceDays input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.Stops{
+    position: absolute;
+    top: 205px;
+    right: 70px;
+}
+.Stops input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.Duration{
+    position: absolute;
+    top: 245px;
+    left: 70px;
+}
+.Duration input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.Days{
+    position: absolute;
+    top: 245px;
+    right: 70px;
+}
+.Days input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.GET button{
+    position: absolute;
+    bottom: 30px;
+    left: 350px;
+    height: 40px;
+    width: 100px;
+    color: red;
+    border-color: red;
+    border-radius: 5px;
+    
+} 
+.GET button:hover{
+   
+    cursor: pointer;
+   
+}
+.POST button{
+    position: absolute;
+    bottom: 30px;
+    right: 300px;
+    height: 40px;
+    width: 100px;
+    background-color:#2f8ce8;
+    border-radius: 6px;
+    border: none;
+}
+.POST button:hover{
+    background-color:#5ecc02;
+    cursor: pointer;
+}
+::placeholder {
+    color: black;
+    opacity: 1; 
+  }
+  

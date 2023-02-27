@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .loginback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #42f42776;
+  }
+  
+  .container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 15px;
+    right: 200px;
+  }
+  
+  
+  .login {
+    width: 400px;
+  }
+  
+  .login form {
+    width: 250px;
+    margin: 60px auto;
+  }
+  
+  .login h1 {
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  
+  .login hr {
+    border-top: 3px solid rgb(255, 162, 0);
+  }
+  
+  .login p {
+    text-align: center;
+    margin: 10px;
+    font-size: 13px;
+  }
+  
+  .login form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    margin-top: 8px;
+  }
+  
+  .loginback .login input {
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 9px;
+    border: 1px solid gray;
+  }
+  
+  .signupbutton {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    background: orange;
+  }
+  
+ .container .forget {
+    font-size: 12px;
+    margin-top: 16px;
+    text-align: right;
+    color: red;
+    position: absolute;
+    bottom: 15px;
+    left: 80px;
+    cursor: pointer;
+  }
+  
+  .loginback.login a {
+    text-decoration: none;
+    color: rgb(26, 255, 0);
+    position: absolute;
+    bottom: 25px;
+  }
+  
+  .loginbutton  {
+    display: inline;
+    margin-bottom: cpx;
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    background: orange;
+  
+  }
+  .container .newuser{
+    position: absolute;
+    bottom: 87px;
+    font-size: 2px;
+  }

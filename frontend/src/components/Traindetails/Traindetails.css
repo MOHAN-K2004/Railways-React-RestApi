@@ -1,0 +1,207 @@
+.backimg{
+    position: absolute;
+    z-index: -10;
+    background-image: url("https://media.timeout.com/images/104676547/image.jpg");
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    background-size: cover;
+    background-image: url("https://cdn.pixabay.com/photo/2014/01/27/12/53/rails-253134__340.jpg");
+}
+.TrainBody{
+    position:absolute;
+    top: 90px;
+    right: 300px;
+    background-color:#c0c9bab9;
+    border-radius: 20px;
+    box-shadow: rgb(254, 254, 254) 0px 5px 15px; 
+    height: 650px;
+    width: 930px;
+
+}
+.TrainBody h3{
+
+    position:absolute;
+    top: 50px;
+    left: 390px;
+    font-family: 'Lora', serif;
+}
+.Trainno{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+.Trainno input{
+   background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.Trainname{
+    position: absolute;
+    top: 100px;
+    right: 140px;
+}
+.Trainname input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.TrainStartPoint{
+    position: absolute;
+    top: 85px;
+    left: 70px;
+}
+.TrainStartPoint input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.TrainStartTime{
+    position: absolute;
+    top: 85px;
+    right: 70px;
+}
+.TrainStartTime input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.TrainEndPoint{
+    position: absolute;
+    top: 125px;
+    left: 70px;
+}
+.TrainEndPoint input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.TrainEndTime{
+    position: absolute;
+    top: 125px;
+    right: 70px;
+}
+.TrainEndTime input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.DistanceinKM{
+    position: absolute;
+    top: 205px;
+    left: 70px;
+}
+.DistanceinKM input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.Classes{
+    position: absolute;
+    top: 165px;
+    right: 70px;
+}
+.Classes input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.ServiceDays{
+    position: absolute;
+    top: 205px;
+    left: 70px;
+}
+.ServiceDays input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.Stops{
+    position: absolute;
+    top: 205px;
+    right: 70px;
+}
+.Stops input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.Duration{
+    position: absolute;
+    top: 245px;
+    left: 70px;
+}
+.Duration input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.Days{
+    position: absolute;
+    top: 245px;
+    right: 70px;
+}
+.Days input{
+    background-color: rgba(240, 248, 255, 0);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+  
+}
+.GET button{
+    position: absolute;
+    bottom: 50px;
+    left: 350px;
+    height: 40px;
+    width: 100px;
+    color: red;
+    border-color: red;
+    border-radius: 5px;
+    
+} 
+.GET button:hover{
+   
+    cursor: pointer;
+   
+}
+.POST Button{
+    position: absolute;
+    bottom: 10px;
+    right: 300px;
+    height: 40px;
+    width: 100px;
+    background-color:#40aaff;
+    border-radius: 6px;
+    border: none;
+}
+.POST button:hover{
+    background-color:#5ecc02;
+    cursor: pointer;
+}
+::placeholder {
+    color: black;
+    opacity: 1; 
+  }
+  

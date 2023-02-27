@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Bree+Serif&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Bree+Serif&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Averia+Serif+Libre&family=Bree+Serif&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Averia+Serif+Libre&family=Bree+Serif&family=Enriqueta&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Averia+Serif+Libre&family=Bree+Serif&family=Enriqueta&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&family=Trirong:wght@100&display=swap');
+
+.traindetailstable tr:nth-child(odd) {
+    background-color: #ccd5d4;
+  }
+  
+.traindetailstable td{
+    font-size: 15px;
+    text-align: left 1px;
+    font-family: 'Bree Serif', serif;
+     box-sizing: border-box;
+}
+
+.traindetailstable th{
+     font-size: 15px;
+     text-align: left 1px ; 
+     background-color: #4acfea; 
+     font-family: 'Assistant', sans-serif;
+}
+.traindetailstable table, th, td {
+  border: 1px solid;
+  }
+.All{
+    position: absolute;
+    top: 0px;
+  
+}
+
+.traindetailstable.editicon{
+  color: rgb(41, 32, 150);
+}
+.traindetailstable .deleteicon{
+  color: red;
+}
+
+.traindetailstable.topInViewTrain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.traindetailstable.topInViewTrain Button{
+  position: absolute;
+  right: 3%;
+}
+.traindetailstable.bookticketicon{
+  color:blue;
+  cursor: pointer;
+}

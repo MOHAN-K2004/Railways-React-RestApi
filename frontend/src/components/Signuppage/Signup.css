@@ -1,0 +1,61 @@
+.backimg{
+    position: absolute;
+    z-index: -10;
+    background-image:
+    
+    
+    url("https://ertms.railtalent.org/wp-content/uploads/2018/02/Picture1-e1592400372202.png");
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    background-size: cover;
+}
+.SignupBody{
+    position:absolute;
+    top: 50px;
+    right: 300px;
+    background-color: rgba(255, 255, 255, 0.805);
+    border-radius: 20px;
+    box-shadow: rgba(168, 168, 225, 0.1) 0px 1px 0px,
+     rgba(149, 149, 214, 0.1) 0px 8px 24px, rgba(126, 126, 216, 0.1) 0px 16px 48px;   
+     height: 700px;
+    width: 930px;
+}
+.SignupBody .SignupButton{
+    position: absolute;
+    bottom: 50px;
+    right: 115px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+}
+.SignupBody .SignupButton:hover{
+    transform: scale(0.97);
+    color: green;
+}
+.SignupInputs.SignupFirstname{
+    position: absolute;
+    top: 10px;
+}
+
+.alreadyAccount {
+    position: absolute;
+    right: 300px;
+    bottom: 9%;
+    cursor: pointer;
+}
+.already.back h5:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+    color:red;
+}
+
+
+
+
+
+
+
+
