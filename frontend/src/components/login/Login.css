@@ -10,7 +10,8 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #42f42776;
+   background: url("https://th.bing.com/th/id/R.cf7a248b2d576d7853e5ccb8afbcb0ae?rik=Cwls4iyNM2cbvA&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f0%2f74%2fA7lSeJ.jpg&ehk=v7lgzn2S4yuwWjRdiuYu1BRrnkyu7pQ0PLAyJkN%2fNF8%3d&risl=&pid=ImgRaw&r=0");
+   background-size: cover;
   }
   
   .container {
@@ -18,9 +19,11 @@
     width: 100%;
     display: flex;
     max-width: 300px;
-    background: #fff;
+    background: linear-gradient(110deg, #3bacfd95 50%, #00ffc892 60%);
+
     border-radius: 15px;
-    right: 200px;
+    right: 100px;
+    bottom: 100px;
   }
   
   
@@ -41,7 +44,7 @@
   }
   
   .login hr {
-    border-top: 3px solid rgb(255, 162, 0);
+    border-top: 3px solid rgb(255, 55, 0);
   }
   
   .login p {
@@ -69,6 +72,7 @@
   }
   
   .signupbutton {
+  
     border: none;
     outline: none;
     padding: 8px;
@@ -78,7 +82,7 @@
     cursor: pointer;
     margin-top: 20px;
     border-radius: 8px;
-    background: orange;
+    background: rgb(44, 125, 231);
   }
   
  .container .forget {
@@ -94,7 +98,7 @@
   
   .loginback.login a {
     text-decoration: none;
-    color: rgb(26, 255, 0);
+    color: rgba(26, 255, 0, 0.818);
     position: absolute;
     bottom: 25px;
   }
@@ -111,7 +115,7 @@
     cursor: pointer;
     margin-top: 20px;
     border-radius: 8px;
-    background: orange;
+    background: rgb(60, 255, 0);
   
   }
   .container .newuser{

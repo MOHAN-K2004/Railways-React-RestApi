@@ -9,6 +9,8 @@ import Forgetpassword from "./components/Forgotpassword/Forgetpassword";
 import Editdetails from "./components/Traindetails/Editdetails";
 import { States } from "./States";
 import PassengerDetails from "./components/AddpassengerDetails/PassengerDetails";
+import EditPassengerdetails from "./components/AddpassengerDetails/EditPassengerDetails";
+import Userdetails from "./components/userdetails/Userdetails";
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
       <BrowserRouter>
         <States>
           <Routes>
+            <Route path="/userdetails" element={<Userdetails />}/>
+            <Route path="/viewpassengerdetails" element={<EditPassengerdetails/>} />
             <Route path="/PassengerDetails"element={<PassengerDetails/>}/>
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/forgetpassword" element={<Forgetpassword />} />
             <Route path="/viewtraindetails" element={<ViewTrainDetails />} />

@@ -48,17 +48,19 @@ function Traindetails() {
   };
   return (
     <>
-      
+      <div className="trainde">
+
+    
       <div className="TrainBody">
         <div className="TrainBox">
           <div className="TrainContent">
             <div className="TrainTitle">
-              <h3>TRAIN DETAILS</h3>
+              <h3>ADD  TRAIN  DETAILS</h3>
             </div>
-            <div className="Trainno">
+            <div className="Trainnot">
               <TextField
                 onChange={(e) => setTrainno(e.target.value)}
-                className="Trainno"
+                className="Trainnot"
                 id="outlined-basic"
                 label="Trainno"
                 variant="outlined"
@@ -186,6 +188,7 @@ function Traindetails() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

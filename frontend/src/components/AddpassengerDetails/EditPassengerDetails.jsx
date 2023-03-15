@@ -1,212 +1,233 @@
 import { useEffect, useState } from "react";
-import axios from "../../axios";
-import "./BookTicket.css";
-import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
+import axios from "../../axios";
 import TextField from "@mui/material/TextField";
-import TableViewIcon from '@mui/icons-material/TableView';
+
+import Button from "@mui/material/Button";
 import { useStates } from "../../States";
 
-function Bookingdetails() {
+import "./EditpassengerDetails.css";
+
+
+import TableViewIcon from '@mui/icons-material/TableView';
+
+function EditPassengerdetails() {
   const navigate = useNavigate();
   const [trainno, setTrainno] = useState("");
-  const [passengername, setpassengername] = useState("");
-  const [travellingdate, seTravellingdate] = useState("");
-  const [noofadults, setNoofadults] = useState("");
-  const [noofchilds, setNoofchilds] = useState("");
-  const [passengerage, setPassengerage] = useState("");
-  const [passengergender, setPassengergender] = useState("");
-  const [preferedcoach, setPreferedcoach] = useState("");
-  const [preferedclass, setPreferedclass] = useState("");
-  const [preferedseat, setPreferedseat] = useState("");
+  const [trainname, setTrainname] = useState("");
+  const [passenger_name, setPassengername] = useState("");
+  const [travelling_date, setTravellingdate] = useState("");
+  const [no_of_adults, setNoofadults] = useState("");
+  const [no_of_childs, setNoofchilds] = useState("");
+  const [passenger_age, setPassengerage] = useState("");
+  const [passenger_gender, setPassengergender] = useState("");
+  const [prefered_coach, setPreferedcoach] = useState("");
+  const [prefered_class, setPreferedclass] = useState("");
+  const [prefered_seat, setPreferedseat] = useState("");
   const [depature, setDepature] = useState("");
   const [arrival, setArrival] = useState("");
-  const { editPass }=useStates();
-  
+  const { editPassenger } = useStates();
   useEffect(() => {
-    setTrainno(editPass?.trainno);
-    setDepature(editPass?.trainStartPoint);
-
-    setArrival(editPass?.trainEndPoint);
-    console.log(editPass);
-  }, [editPass]);
-  const Bookingdetails = () => {
+    setTrainno(editPassenger?.trainno);
+    setTrainname(editPassenger?.trainname);
+    setPassengername(editPassenger?.passenger_name);
+    setTravellingdate(editPassenger?.travelling_date);
+    setNoofadults(editPassenger?.no_of_adults);
+    setNoofchilds(editPassenger?.no_of_childs);
+    setPassengerage(editPassenger?.passenger_age);
+    setPassengergender(editPassenger?.passenger_gender);
+    setPreferedcoach(editPassenger?.prefered_coach);
+    setPreferedclass(editPassenger?.prefered_class);
+    setPreferedseat(editPassenger?.prefered_seat);
+    setDepature(editPassenger?.depature);
+    setArrival(editPassenger?.arrival);
+  }, [editPassenger]);
+  const Passengerdetails = (id) => {
     axios
-      .post("/ticketbookingdetails/save", {
+      .put(`/ticketbookingdetails/update/${id}`, {
         trainno: trainno,
-        passenger_name: passengername,
-        travelling_date: travellingdate,
-        no_of_adults: noofadults,
-        no_of_childs: noofchilds,
-        passenger_age: passengerage,
-        passenger_gender: passengergender,
-        prefered_coach: preferedcoach,
-        prefered_class: preferedclass,
-        prefered_seat: preferedseat,
+        trainname: trainname,
+        passenger_name: passenger_name,
+        travelling_date: travelling_date,
+        no_of_adults: no_of_adults,
+        no_of_childs: no_of_childs,
+        passenger_age: passenger_age,
+        passenger_gender: passenger_gender,
+        prefered_coach: prefered_coach,
+        prefered_class: prefered_class,
+        prefered_seat: prefered_seat,
         depature: depature,
         arrival: arrival,
       })
       .then((res) => {
         console.log(res);
       });
-      gotoPassengerDetails()
-  };
-  const gotoPassengerDetails= ()=>{
-    navigate("/PassengerDetails")
-  }
+      navigate("/PassengerDetails");
+    };
+   
+    const gotoPassengerDetails = () => {
+      navigate("/PassengerDetails");
+    };
   return (
     <>
-   <div className="bookingticketbody">
-
-
-
-      <div className="TrainBookBody">
-        <div className="TrainBookBox">
-          <div className="TrainCbookontent">
-            <div className="TrainbookTitle">
-              <h2>Ticket  Booking  Passenger  Details</h2>
+     
+     <div className="PassengerBody">
+        <div className="PassengerBox">
+          <div className="PassengerContent">
+            <div className="PassengerTitle">
+              <h2>UPDATE PASSENGER DETAILS</h2>
             </div>
-            <div className="Trainno1">
+            <div className="Trainno2">
               <TextField
-                className="Trainno1"
+                className="Trainno2"
                 id="filled-number"
                 onChange={(e) => setTrainno(e.target.value)}
                 label="Trainno"
+                value={trainno}
                 type="number"
                 InputLabelProps={{
                   shrink: true,
                 }}
-                value={trainno}
               />
             </div>
-            <div className="passenger_name1">
+            <div className="passenger_name2">
               <TextField
                 required
                 id="outlined-required"
-                onChange={(e) => setpassengername(e.target.value)}
-                className="passenger_name1"
+                onChange={(e) => setPassengername(e.target.value)}
+                className="passenger_name2"
                 label="Name's"
+                value={passenger_name}
                 defaultValue=""
                 variant="outlined"
               />
             </div>
-            <div className="travellingdate1">
+            <div className="travellingdate2">
             <TextField
                 required
                 id="outlined-required"
-                onChange={(e) => seTravellingdate(e.target.value)}
-                className="travellingdate"
+                onChange={(e) => setTravellingdate(e.target.value)}
+                className="travellingdate2"
                 label="Travel Date"
+                value={travelling_date}
                 defaultValue=""
                 variant="outlined"
               />
               
             </div>
-            <div className="no_of_adults1">
+            <div className="no_of_adults2">
               <TextField
                 className="no_of_adults"
                 id="filled-number"
                 onChange={(e) => setNoofadults(e.target.value)}
                 label="Adults"
+                value={no_of_adults}
                 type="number"
                 InputLabelProps={{
                   shrink: true,
                 }}
               />
             </div>
-            <div className="no_of_childs1">
+            <div className="no_of_childs2">
               <TextField
                 onChange={(e) => setNoofchilds(e.target.value)}
-                className="no_of_childs"
+                className="no_of_childs2"
                 id="filled-number"
                 label="Childs"
+                value={no_of_childs}
                 type="number"
                 InputLabelProps={{
                   shrink: true,
                 }}
               />
             </div>
-            <div className="passenger_age1">
+            <div className="passenger_age2">
               <TextField
-                required
+               
                 id="outlined-required"
                 onChange={(e) => setPassengerage(e.target.value)}
-                className="passenger_age"
+                className="passenger_age2"
                 label="Age's"
+                value={passenger_age}
                 defaultValue=""
                 variant="outlined"
               />
             </div>
-            <div className="passenger_gender1">
+            <div className="passenger_gender2">
               <TextField
                 required
                 id="outlined-required"
                 onChange={(e) => setPassengergender(e.target.value)}
-                className="passenger_gender"
+                className="passenger_gender2"
                 label="Gender M/F"
+                value={passenger_gender}
                 defaultValue=""
                 variant="outlined"
               />
             </div>
 
-            <div className="prefered_coach1">
+            <div className="prefered_coach2">
               <TextField
                 required
                 id="outlined-required"
                 onChange={(e) => setPreferedcoach(e.target.value)}
-                className="prefered_coach"
-                label="Coach"
+                className="prefered_coach2"
+                label="coach"
+                value={prefered_coach}
                 defaultValue=""
                 variant="outlined"
               />
             </div>
-            <div className="prefered_class1">
+            <div className="prefered_class2">
               <TextField
                 required
                 id="outlined-required"
                 onChange={(e) => setPreferedclass(e.target.value)}
-                className="prefered_class"
+                className="prefered_class2"
                 label="Class"
+                value={prefered_class}
                 defaultValue=""
                 variant="outlined"
               />
             </div>
-            <div className="prefered_seat1">
+            <div className="prefered_seat2">
               <TextField
                 required
                 id="outlined-required"
                 onChange={(e) => setPreferedseat(e.target.value)}
-                className="prefered_seat"
+                className="prefered_seat2"
                 label="SeatNumber"
+                value={prefered_seat}
                 defaultValue=""
                 variant="outlined"
               />
             </div>
-            <div className="depature1">
+            <div className="depature2">
               <TextField
                 required
                 id="outlined-required"
                 onChange={(e) => setDepature(e.target.value)}
-                className="depature"
+                className="depature2"
                 label="From"
-                variant="outlined"
                 value={depature}
-              />
-            </div>
-            <div className="arrival1">
-              <TextField
-                required
-                id="outlined-required"
-                onChange={(e) => setArrival(e.target.value)}
-                className="arrival"
-                label="To"
                 defaultValue=""
                 variant="outlined"
+              />
+            </div>
+            <div className="arrival2">
+              <TextField
+                required
+                id="outlined-required2"
+                onChange={(e) => setArrival(e.target.value)}
+                className="arrival2"
+                label="To"
                 value={arrival}
+                defaultValue=""
+                variant="outlined"
               />
             </div>
 
-            <div className="passengerdetailsbutton">
+            <div className="passengerdetailsbutton1">
            
                    <Button onClick={gotoPassengerDetails} className="passenger" variant="outlined" color="primary">
                      <TableViewIcon/> 
@@ -216,25 +237,16 @@ function Bookingdetails() {
               </div>
             <div className="savebutton">
               
-            <Button className="saving" variant="outlined" color="primary" onClick={Bookingdetails}>
-               BookTicket
+            <Button className="saving" variant="outlined" color="primary" onClick={()=>Passengerdetails(editPassenger.no)}>
+              Update
            </Button>
             
             </div>
           </div>
         </div>
-            
-   </div>
       </div>
     </>
   );
 }
 
-export default Bookingdetails;
-
-
-
-
-
-
-
+export default EditPassengerdetails;

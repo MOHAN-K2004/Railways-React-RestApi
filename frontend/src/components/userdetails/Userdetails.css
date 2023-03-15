@@ -1,73 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Bree+Serif&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Bree+Serif&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Bree+Serif&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Averia+Serif+Libre&family=Bree+Serif&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Averia+Serif+Libre&family=Bree+Serif&family=Enriqueta&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Averia+Serif+Libre&family=Bree+Serif&family=Enriqueta&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&family=Trirong:wght@100&display=swap');
 
-.traindetailstable tr:nth-child(odd) {
+.userdetailstable tr:nth-child(odd) {
     background-color: #99b8b5;
   }
   
-.traindetailstable td{
+.userdetailstable td{
     font-size: 15px;
     text-align: left 1px;
     font-family: 'Bree Serif', serif;
      box-sizing: border-box;
+     width: 100vw;
+     height: 100%;
 }
 
-.traindetailstable th{
+.userdetailstable th{
      font-size: 15px;
      text-align: left 1px ; 
      background-color: #4acfea; 
      font-family: 'Rampart One', cursive;
 }
-.traindetailstable table, th, td {
+.userdetailstable table, th, td {
   border: 1px solid;
   }
-.All{
-    position: absolute;
-    top: 0px;
-  
-}
-
-.traindetailstable.editicon{
+.userdetailstable.editusericon{
   color: rgb(41, 32, 150);
 }
-.traindetailstable .deleteicon{
+.userdetailstable .deleteicon{
   color: red;
 }
-
-.traindetailstable.topInViewTrain{
+.userdetailstable.userdetailstop{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
-}
-
-.traindetailstable.topInViewTrain{
   position: absolute;
   right: 3px;
 }
-.bookticketicon{
-  color:blue;
+.deleteusericon{
   cursor: pointer;
 }
-.deleteicon{
+.editusericon{
   cursor: pointer;
 }
-.editicon{
-  cursor: pointer;
-}
-
-.Alltraindetails{
+.udetail{
   background: linear-gradient(110deg, #b9fd3bf5 30%, #00ffc892 60%);
 
 }
-.addtraindetailbutton{
+.adduserdetailbutton{
   position: absolute;
-  top: 10px;
+  top: 4px;
   right: 20px;
 }
-.topInViewTrain{
+.userdetailstop{
   padding: 10px;
-}
+} 

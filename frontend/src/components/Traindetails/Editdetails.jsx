@@ -35,6 +35,7 @@ function Editdetails() {
     setStops(editTrain?.stops);
     setDuration(editTrain?.duration);
     setDays(editTrain?.days);
+    console.log(editTrain);
   }, [editTrain]);
   const Traindetails = (id) => {
     axios
@@ -63,14 +64,7 @@ function Editdetails() {
   };
   return (
     <>
-      <style>
-        @importurl('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-        @import
-        url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
-      </style>
-      <div className="backimg">
-        {/* <img src='https://ertms.railtalent.org/wp-content/uploads/2018/02/Picture1-e1592400372202.png' alt=''/> */}
-      </div>
+     <div className="edittrainbox">
       <div className="TrainBody">
         <div className="TrainBox">
           <div className="TrainContent">
@@ -219,6 +213,7 @@ function Editdetails() {
                 UPDATE
               </Button>
             </div>
+          </div>
           </div>
         </div>
       </div>

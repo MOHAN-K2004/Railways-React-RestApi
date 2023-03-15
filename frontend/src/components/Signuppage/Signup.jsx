@@ -5,6 +5,7 @@ import "./Signup.css";
 import TextField from "@mui/material/TextField";
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
+import TableViewIcon from '@mui/icons-material/TableView';
 function Signup() {
   const [firstname, setFirstname] = useState("");
   const [lastName, setLastname] = useState("");
@@ -38,31 +39,36 @@ function Signup() {
       .then((res) => {
         console.log(res);
       });
-      setFirstname("");
-      setLastname("");
-      setDob("");
-      setGender("");
-      setMail("");
-      setMobile("");
-      setNationality("");
-      setStreet("");
-      setArea("");
-      setCity("");
-      setState("");
-      setPass("");
+      // setFirstname("");
+      // setLastname("");
+      // setDob("");
+      // setGender("");
+      // setMail("");
+      // setMobile("");
+      // setNationality("");
+      // setStreet("");
+      // setArea("");
+      // setCity("");
+      // setState("");
+      // setPass("");
+      navigate("/userdetails");
     }
     const navigate = useNavigate();
   const gotoLogin = ()=>{
       navigate("/")
+      gotoUserdetils()
   };
   const gotoViewTrainDetails = () =>{
     navigate("/viewtraindetails")
   }
+  const gotoUserdetils= ()=>{
+    navigate("/userdetails")
+  }
   return (
     <>
       
-      <div className="backimg">
-        {/* <img src='https://ertms.railtalent.org/wp-content/uploads/2018/02/Picture1-e1592400372202.png' alt=''/> */}
+      <div className="signupbackimg">
+        <img src='https://farm4.staticflickr.com/3695/8810395837_0b14dfd13c.jpg' alt=''/>
       </div>
       <div className="SignupBody">
         <div className="SignupBox">
@@ -209,6 +215,14 @@ function Signup() {
             </Button>
             </div>
           </div>
+          <div className="userdetailsbutton">
+           
+                   <Button onClick={gotoUserdetils} className="passenger" variant="outlined" color="primary">
+                     <TableViewIcon/> 
+                </Button>
+           
+              
+              </div>
         </div>
       </div>
     </>

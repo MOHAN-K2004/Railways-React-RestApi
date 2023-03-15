@@ -2,22 +2,19 @@
 
 
 
-.backimg{
-    position: absolute;
-    z-index: -10;
-    background-image: url("https://media.timeout.com/images/104676547/image.jpg");
+.edittrainbox{
+    background-image: url("https://th.bing.com/th/id/R.c7416c14a37b904b0fd6fbdb73da7eb6?rik=ckJumRf51FpVSg&riu=http%3a%2f%2fwww.sasac.gov.cn%2fn2588025%2fn2588149%2fc8148651%2fpart%2f8148666.jpg&ehk=rp174sszhiL8QGTBti5LLZiz9RakIhhuX3mLN7I47Z8%3d&risl=&pid=ImgRaw&r=0");
     height: 100vh;
     width: 100vw;
-    top: 0px;
     background-size: cover;
 }
 .TrainBody{
     position:absolute;
     top: 90px;
     right: 300px;
-    background-color:#abf66eb9;
+    background: linear-gradient(110deg, #3bacfd95 50%, #00ffc892 60%);
     border-radius: 20px;
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
     height: 650px;
     width: 930px;
 }

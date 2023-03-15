@@ -6,11 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Train.Entity.TicketBookingEntity;
@@ -32,15 +33,15 @@ public class TicketBookingController {
 	public void save(@RequestBody TicketBookingEntity tbe) {
 		tbs.savedata(tbe);
 	}
-	@PutMapping("/update")
-	public void update(@RequestBody TicketBookingEntity tbe,@RequestParam int id) {
+	@PutMapping("/update/{id}")
+	public void update(@RequestBody TicketBookingEntity tbe,@PathVariable int id) {
 		tbe.setNo(id);
 		tbs.savedata(tbe);
 		
 	}
-	@DeleteMapping("/delete")
+	@DeleteMapping("/delete/{id}")
 
-		public void delete(int id) {
+		public void delete(@PathVariable int id) {
 		tbs.deletedata(id);
 		}
 	

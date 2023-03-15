@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Train.Entity.TicketBookingEntity;
@@ -33,8 +33,8 @@ public class TicketBookingController {
 	public void save(@RequestBody TicketBookingEntity tbe) {
 		tbs.savedata(tbe);
 	}
-	@PutMapping("/update")
-	public void update(@RequestBody TicketBookingEntity tbe,@RequestParam int id) {
+	@PutMapping("/update/{id}")
+	public void update(@RequestBody TicketBookingEntity tbe,@PathVariable int id) {
 		tbe.setNo(id);
 		tbs.savedata(tbe);
 		

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-
 import "./ViewTrainDetails.css";
 import axios from "../../axios";
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import DirectionsTransitIcon from "@mui/icons-material/DirectionsTransit";
@@ -11,10 +11,10 @@ import { useNavigate } from "react-router-dom";
 import { useStates } from "../../States";
 const ViewTrainDetails = () => {
   const [trainDetails, setTrainDetails] = useState([]);
-  const {setEditTrain,editTrain} = useStates();
+  const {setEditTrain,editTrain,setEditPass} = useStates();
   const navigate = useNavigate();
   const getTraindetails = () => {
-    fetch("http://localhost:8080/traindetails/view")
+    fetch("http://localhost:2424/traindetails/view")
       .then((res) => res.json())
       .then((result) => {
         setTrainDetails(result);
@@ -41,20 +41,21 @@ const ViewTrainDetails = () => {
     console.log(editTrain);
   }
   return (
-    <div className="All">
+    <div className="Alltraindetails">
       <div className="topInViewTrain">
         <h3>
           <DirectionsTransitIcon />
           Train Details
           <DirectionsTransitIcon />
         </h3>
+        <div className="addtraindetailbutton">
+
         <Button onClick={gotoAddTrainDetails} variant="contained" color="success">
-          Add Train Detail
+        <AddCircleIcon/>
         </Button>
+        </div>
       </div>
       <div className="traindetailstable">
-
-    
       <table className="">
         <tr>
           <th>S.No</th>
@@ -99,13 +100,15 @@ const ViewTrainDetails = () => {
               <td>
                 <div
                   className="deleteicon"
+                  
                   onClick={() => DeleteTrainDetails(train.no)}
-                >
+                   >
+                    
                   <DeleteIcon />
                 </div>
               </td>
               <td>
-                <div onClick={()=>{gotoBookTicket()}} className="bookticketicon">
+                <div onClick={()=>{gotoBookTicket();setEditPass(train)}} className="bookticketicon">
                    <u>Book</u>
                 </div>
               </td>

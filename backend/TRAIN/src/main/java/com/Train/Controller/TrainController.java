@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Train.Entity.TrainEntity;
@@ -48,8 +48,8 @@ public class TrainController {
 		
 		
 	}
-	@PutMapping("/update")
-	public void updatedata(@RequestBody TrainEntity tre,@RequestParam int id) {
+	@PutMapping("/update/{id}")
+	public void updatedata(@RequestBody TrainEntity tre,@PathVariable int id) {
 		tre.setNo(id);
 		ts.savedata(tre);
 	}
