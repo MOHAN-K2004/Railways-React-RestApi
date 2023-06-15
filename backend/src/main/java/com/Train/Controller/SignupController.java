@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Train.Entity.SignupEntity;
@@ -28,9 +29,13 @@ public class SignupController {
 		return ss.getdetails();
 	}
 	
+	@GetMapping("/login")
+	public SignupEntity Login(@RequestParam String mail,@RequestParam String pass){
+		return ss.getLogin(mail,pass);
+	}
 	@PostMapping("/save")
 	public String createuser(@RequestBody SignupEntity se) {
-	  boolean isusernameexist=ss.isUserExists(se.getFirstName());
+	  boolean isusernameexist=ss.isUserExists(se.getMail());
 	  if(!isusernameexist) {
 		  ss.savedata(se);
 		  return "Successfully account created ";

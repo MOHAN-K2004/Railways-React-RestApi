@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Train.Entity.TrainEntity;
@@ -33,6 +33,22 @@ public class TrainController {
 	public List<TrainEntity> getting(){
 		return ts.gettraindatas();
 	}
+	@GetMapping("/pagenation/{pagesize}/{offset}/{field}")
+	public List<TrainEntity> getpagenation(@PathVariable int pagesize,@PathVariable int offset, @PathVariable String field){
+         return ts.getpageing(pagesize,offset,field).getContent();
+	}
+
+	// @GetMapping("/gettrain")
+	// public List<TrainEntity> getTrains(@RequestParam String from,@RequestParam String to){
+	// 	return ts.getTrains(from,to);
+	// }
+
+	@GetMapping("/getById")
+	public TrainEntity getById(@RequestParam int id)
+	{
+		return ts.getById(id);
+	}
+	
 	
 	
 	@PostMapping("/save")
@@ -59,18 +75,5 @@ public class TrainController {
 	}
 
 }
-//{
-//	"train_No":"16616",
-//	"train_Name":"Chemmozhi Express",
-//	"trainStartPoint":"Coimbatore Junction (CBE)",
-//	"trainStartTime":"00:15",
-//	"trainEndPoint":"Mannargudi (MQ)",
-//	"trainEndTime":"07:55",
-//	"distance_in_KM":335,
-//	"classes":"1A,2A,3A,SL",
-//	"serviceDays":"All Days",
-//	"stops":9,
-//	"duration":"7 hrs 40 mins",
-//	"days":"1"
-//}
+
 

@@ -24,7 +24,7 @@ public class SignupService implements Signupinterface {
 		
 	}
 	public boolean isUserExists(String firstname) {
-		return sr.existsByfirstName(firstname);
+		return sr.existsByMail(firstname);
 	}
 	
 
@@ -39,6 +39,13 @@ public class SignupService implements Signupinterface {
 	public void deletedata(int id) {
 		sr.deleteById(id);
 	}
+
+    public SignupEntity getLogin(String mail, String pass) {
+		SignupEntity signupEntity = sr.findByMailAndPass(mail,pass);
+		if(signupEntity==null)
+        	return null;
+		return signupEntity;
+    }
 
 	
 

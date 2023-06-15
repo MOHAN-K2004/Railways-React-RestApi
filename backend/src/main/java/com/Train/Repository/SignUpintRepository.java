@@ -7,7 +7,11 @@ import com.Train.Entity.SignupEntity;
 
 public interface SignUpintRepository extends JpaRepository<SignupEntity, Integer> {
 
-	public boolean existsByfirstName(String firstname);
+	// public boolean existsByfirstName(String firstname);
+
+    public SignupEntity findByMailAndPass(String mail, String pass);
+
+    public boolean existsByMail(String firstname);
 	
 
 }

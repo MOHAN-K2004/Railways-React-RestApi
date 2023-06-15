@@ -1,73 +1,206 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Bree+Serif&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Bree+Serif&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Averia+Serif+Libre&family=Bree+Serif&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Averia+Serif+Libre&family=Bree+Serif&family=Enriqueta&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Averia+Serif+Libre&family=Bree+Serif&family=Enriqueta&family=Inconsolata:wght@800&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Merriweather:ital,wght@0,900;1,300;1,900&family=Signika+Negative:wght@500&family=Source+Serif+Pro:ital,wght@1,700&family=Trirong:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Spectral:ital,wght@1,600&family=Tilt+Prism&display=swap');
 
 .traindetailstable tr:nth-child(odd) {
-    background-color: #99b8b5;
-  }
-  
-.traindetailstable td{
-    font-size: 15px;
-    text-align: left 1px;
-    font-family: 'Bree Serif', serif;
-     box-sizing: border-box;
+  background-color: #e0f1d472;
 }
 
-.traindetailstable th{
-     font-size: 15px;
-     text-align: left 1px ; 
-     background-color: #4acfea; 
-     font-family: 'Rampart One', cursive;
+.traindetailstable td {
+  font-size: 15px;
+  text-align: left 1px;
+  font-family: "Bree Serif", serif;
+  box-sizing: border-box;
 }
-.traindetailstable table, th, td {
+
+.traindetailstable th {
+  font-size: 15px;
+  text-align: left 1px;
+  background-color: #4acfea;
+  font-family: "Rampart One", cursive;
+}
+.traindetailstable table,
+th,
+td {
   border: 1px solid;
-  }
-.All{
-    position: absolute;
-    top: 0px;
-  
+}
+.All {
+  position: absolute;
+  top: 0px;
 }
 
-.traindetailstable.editicon{
+.traindetailstable.editicon {
   color: rgb(41, 32, 150);
 }
-.traindetailstable .deleteicon{
+.traindetailstable .deleteicon {
   color: red;
 }
 
-.traindetailstable.topInViewTrain{
+.traindetailstable.topInViewTrain {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
 }
+.topInViewTrain {
+  margin-top: 80px;
+  height: 100px;
+}
 
-.traindetailstable.topInViewTrain{
+.traindetailstable.topInViewTrain {
   position: absolute;
   right: 3px;
 }
-.bookticketicon{
-  color:blue;
+.bookticketicon {
+  color: blue;
   cursor: pointer;
 }
-.deleteicon{
+.deleteicon {
   cursor: pointer;
+  border: 1px solid rgb(255, 0, 0);
+  width: 30px;
+  margin-left: 50px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  
 }
-.editicon{
+.editicon {
   cursor: pointer;
+  border: 1px solid rgb(25, 0, 255);
+  width: 30px;
+  border-radius: 2px;
+  margin-left: 50px;
 }
 
-.Alltraindetails{
-  background: linear-gradient(110deg, #b9fd3bf5 30%, #00ffc892 60%);
-
+.Alltraindetails {
+  /* background-image: url("https://th.bing.com/th/id/R.c7416c14a37b904b0fd6fbdb73da7eb6?rik=ckJumRf51FpVSg&riu=http%3a%2f%2fwww.sasac.gov.cn%2fn2588025%2fn2588149%2fc8148651%2fpart%2f8148666.jpg&ehk=rp174sszhiL8QGTBti5LLZiz9RakIhhuX3mLN7I47Z8%3d&risl=&pid=ImgRaw&r=0"); */
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .addtraindetailbutton{
   position: absolute;
   top: 10px;
   right: 20px;
+  margin-top: 90px;
 }
-.topInViewTrain{
+.topInViewTrain {
   padding: 10px;
+}
+
+.train-container {
+  height: 240px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 90px;
+  margin-right: 90px;
+  color: #003997;
+}
+
+.train-container-2 {
+  border-top: 1px solid #dbdbdb;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content:  space-around;
+  
+}
+
+.train-container-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.train-whole-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.train-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.continue-button {
+  background-color: #0092ff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-weight: bolder;
+  border-radius: 5px;
+   cursor: pointer;
+}
+.train-left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 200px;
+}
+
+.train-section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.train-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.train-box-1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.train-section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.train-middle-section {
+  display: flex;
+  gap: 20px;
+}
+
+.train-departuretime,
+.train-arrivaltime {
+  font-weight: bold;
+}
+
+.train-servicedays
+{
+  font-size: 10px;
+  font-weight: bold;
+}
+.train_classs{
+  display: flex;
+}
+.train_class{
+  margin: 0 10px;
+  padding: 1px;
+  width: 35px;
+  border: 2px solid #003997 ;
+  border-radius: 2px;
+  cursor: pointer;
+
+}
+.viewtraindetails-header{
+  font-size: 50px;
+  font-family: 'Tilt Prism', cursive;
+}
+.train-container .viewtraindetails-new{
+ margin-top: -20px;
+ margin-left: -200px;
+ cursor: pointer;
+}
+.train-right-section{
+  display: flex;
+  flex-direction: column;
 }

@@ -9,9 +9,11 @@ import PaymentIcon from '@mui/icons-material/Payment';
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import { useStates } from "../../States";
+import { toast } from "react-hot-toast";
 const PassengerDetails = () => {
   const [PassengerDetails, setPassengerDetails] = useState([]);
-    const {setEditPassenger,editPassenger} = useStates();
+    const {setEditPassenger,editPassenger,
+      setPrice} = useStates();
   const navigate = useNavigate();
   const getPassengerdetails = () => {
     fetch("http://localhost:2424/ticketbookingdetails/view")
@@ -21,12 +23,22 @@ const PassengerDetails = () => {
         console.log(result);
       });
   };
+  const buttonStyle = {
+    fontFamily: "Arial",
+    fontSize: "16px",
+  };
+  const labelStyle = {
+    fontFamily: "Popins",
+    fontSize: "16px",
+  };
   useEffect(() => {
     getPassengerdetails();
   }, []);
   const DeletePassengerDetails = (trainno) => {
     console.log(trainno);
     axios.delete(`/ticketbookingdetails/delete/${trainno}`).then((res) => {
+      // alert("Deleted Successfully")
+      toast.success("Deleted Sucessfully")
       getPassengerdetails();
     });
   };
@@ -47,13 +59,7 @@ const PassengerDetails = () => {
           <PermContactCalendarIcon />
         </h3>
         <div className="bur">
-          <Button
-            onClick={gotoAddPassengerDetails}
-            variant="contained"
-            color="success"
-          >
-               <AddCircleIcon/> 
-          </Button>
+          
         </div>
       </div>
       <div className="passengertable">
@@ -64,7 +70,7 @@ const PassengerDetails = () => {
             <th>Passenger Name's</th>
             <th>Travelling Date</th>
             <th>Adults</th>
-            <th>Childs</th>
+            {/* <th>Childs</th> */}
             <th>Passenger's Age</th>
             <th>Gender's</th>
             <th>Coach</th>
@@ -72,6 +78,7 @@ const PassengerDetails = () => {
             <th>seats</th>
             <th>Depature</th>
             <th>Arrival</th>
+            <th>Price</th>
             <th>Edit</th>
             <th>Delete</th>
             <th>Payment</th>
@@ -85,7 +92,7 @@ const PassengerDetails = () => {
                 <td>{train.passenger_name}</td>
                 <td>{train.travelling_date}</td>
                 <td>{train.no_of_adults}</td>
-                <td>{train.no_of_childs}</td>
+                {/* <td>{train.no_of_childs}</td> */}
                 <td>{train.passenger_age}</td>
                 <td>{train.passenger_gender}</td>
                 <td>{train.prefered_coach}</td>
@@ -93,9 +100,9 @@ const PassengerDetails = () => {
                 <td>{train.prefered_seat}</td>
                 <td>{train.depature}</td>
                 <td>{train.arrival}</td>
+                  <td>{train.price}</td>
                 <td>
                   <div className="editicon"onClick={()=>{gotoEditPage();setEditPassenger(train)}}>
-                    
                     <EditIcon />
                   </div>
                 </td>
@@ -108,8 +115,7 @@ const PassengerDetails = () => {
                   </div>
                 </td>
                 <td>
-                  {/* onClick={()=>{gotoPayment()}} */}
-                  <div className="Paymenticon">
+                  <div  onClick={()=>{setPrice(train?.price);navigate(`/payment`)}} className="Paymenticon">
                     <PaymentIcon/>
                   </div>
                 </td>

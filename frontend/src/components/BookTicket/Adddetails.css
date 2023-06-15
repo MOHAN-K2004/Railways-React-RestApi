@@ -1,0 +1,131 @@
+.Adddetails-All{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size:  center;
+    /* background-image: url("https://img.freepik.com/premium-photo/indian-train_1498-1.jpg?size=626&ext=jpg&ga=GA1.2.1072938342.1677251785&semt=sph"); */
+}
+/* .adddetails-back{
+   
+} */
+.whiteInTop{
+    height: 50px;
+    background-color: white;
+    margin-top: -40px;
+    border-radius: 10px;
+}
+.Adddetails-container-top{
+    background-color: #dbeafc;
+    height: 400px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+.Adddetails-container-bottom{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 10px;
+    width: 60%;
+    height: 380px;
+    background-color: #92bbf5;
+    margin-bottom: 20px;
+
+}
+.Adddetails-container-top1{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.Adddetails-container-bottom-h1{
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.Addddetails-container-bottom2{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin-left: 50px;
+}
+.Addddetails-container-bottom2-h2{
+    color: rgba(255, 0, 0, 0.503);
+    font-size: 1px;
+    margin-top: 20px;
+}
+
+.TextFields1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.TextFields2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 40px;
+}
+.TextFields3{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 40px;
+}
+.gender_box{
+    width: 150px;
+}
+.adddetails-bookticket-button{
+     display: flex;
+     margin-top: 30px;
+     margin-left: 700px;
+    font-family: 'Poppins', sans-serif;
+}
+.adddetails-bookticket-button-1{
+    border: 1px solid rgb(27, 2, 216);
+    padding: 5px;
+    border-radius: 5px;
+}
+.traindetails_noandname{
+    display: flex;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 6500;
+    align-items: start  ;
+    flex-direction: column;
+}
+.line_fromto{
+    font-size: 18px;
+    color: gray;
+    margin: 0 10px;
+}
+.image_line1{
+    margin-left: 10px;
+}
+.image_line2{
+
+    margin-right: 10px;
+}
+.addbooking-longline{
+    color: blue;
+}
+.train_from_to{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.train_from_time  {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.train_from_time{
+    font-size: 19px;
+}

@@ -1,0 +1,294 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Foldit:wght@600&family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Foldit:wght@600&family=Montserrat+Alternates&family=Spectral:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Foldit:wght@600&family=Montserrat+Alternates&family=Philosopher:wght@700&family=Spectral:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Arvo:ital,wght@1,700&family=Foldit:wght@600&family=Montserrat+Alternates&family=Philosopher:wght@700&family=Spectral:ital,wght@0,600;1,600&display=swap');
+.homebackground6{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#2d9dff, #ffffff);
+}
+.homenavbar6{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color:#ffffff;
+    z-index: 20;
+    font-size: 30px;
+}
+.homebox16{
+    position: relative;
+    height: 550px;
+    width: 900px;
+    background-color: black;
+    top: 150px;
+    left: 400px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.homebox16 img{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+.homebox26{
+    position: absolute;
+    height: 490px;
+    width: 550px;
+    top: 180px;
+    left: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.trainicon6{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+.homenavbar6 h3{
+    position: absolute;
+    top: 16px;
+    left: 240px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: green;
+}
+.homenavbar6 h2{
+    position: absolute;
+    top: 8px;
+    left: 320px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: green;
+}
+.homenavbar6 h4{
+    position: absolute;
+    top: -6px;
+    left: 355px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: green;
+}
+.homenavbar6 .homeline6 h4{
+    position: absolute;
+    top: -16px;
+    left: 319px;
+    color: green;
+}
+.homenavbar6 .signinbutton6{
+    position: absolute;
+    top: 19px;
+    right: 200px;
+    font-family: 'Philosopher', sans-serif;
+    
+}
+.homenavbar6 .homerigister6 h6{
+    position: absolute;
+    top: 25px;
+    right: 320px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    cursor: pointer;
+}
+.homenavbar6 .homerigister6 h5{
+    position: absolute;
+    top: 25px;
+    right: 450px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+.homebox26 .homefrom6{
+    background-color:#c8d6de;
+    border: none;
+    padding: 6px;
+    position: absolute;
+    top: 140px;
+    left: 46px;
+    height: 50px;
+    width: 200px;
+    border-radius: 2px;
+    
+}
+.homebox26 .hometo6{
+    background-color: #c8d6de;
+    border: none;
+    padding: 6px;
+    position: absolute;
+    top: 140px;
+    height: 50px;
+    right: 36px;
+    width: 210px;
+    border-radius: 2px;
+}
+.homebox26 .homeswap6{
+    position: absolute;
+    top: 145px;
+    left: 260px;
+}
+.homebox26 .homedate6{
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: absolute;
+    height:50px;
+    width: 205px;
+    top: 230px;
+    left: 45px;
+    border: none;
+    background-color:#c8d6de ;
+    border-radius: 2px;
+}
+.homebox26 .homedate16{
+    font-family: 'Montserrat Alternates', sans-serif;
+    position: absolute;
+    height:50px;
+    width: 210px;
+    top: 230px;
+    right: 35px;
+    border: none;
+    background-color:#c8d6de ;
+    border-radius: 2px;
+}
+.homebox26 h1{
+    /* depature */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    left: 47px;
+    top: 109px;
+}
+.homebox26 h4{
+    /* destination */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    right: 155px;
+    top: 109px;
+}
+.homebox26 h2{
+    /* fromdate */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    left: 47px;
+    top: 200px;
+}
+.homebox26 h3{
+    /* todate */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    right: 185px;
+    top: 200px;
+}
+.homebox26 h5{
+    /* todate */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    left: 40px;
+    top: 300px;
+}
+.homebox26 h6{
+    /* todate */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    right: 160px;
+    top: 305px;
+}
+.homebox26 h7{
+    /* tickets */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    right: 245px;
+    top: 85px;
+    z-index: 2;
+}
+.homenavbar6 h7{
+    /* tickets */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    right: 41px;
+    top: 63px;
+    z-index: 2;
+}
+.homebox26 .homereservationtype6{
+    
+    position: absolute;
+    height: 40px;
+    width: 210px;
+    top: 330px;
+    left: 41px;
+    background-color:#c8d6de ;
+}
+.homebox26 .homeclasses6{
+    position: absolute;
+    height: 40px;
+    width: 210px;
+    top: 330px;
+    right: 41px;
+    background-color:#c8d6de ;
+}
+.names16{
+    font-size: 0.1px;
+}
+.names26{
+    font-size: 0.1px;
+}
+.homebox26 .homesubmitbutton6{
+    position: absolute;
+    left: 240px;
+    bottom: 40px;
+    font-family: 'Philosopher', sans-serif;
+}
+.homebox26  .image16{
+    position: absolute;
+    height: 90px;
+    width: 170px;
+    left: 40px;
+    top: 20px;
+}
+.homebox26 .image26{
+    position: absolute;
+    height: 90px;
+    width: 170px;
+    right: 30px;
+    top: 20px;
+}
+.homebox26 .image36{
+    position: absolute;
+    height: 70px;
+    width: 75px;
+    right: 230px;
+    top: 20px;
+}
+.homenavbar6 .image36{
+    position: absolute;
+    height: 70px;
+    width: 75px;
+    right: 30px;
+    top: 0px;
+}
+.homebox16 h2{
+    position: absolute;
+    top: 40px;
+    right: 170px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+}
+.homebox16 h3{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+
+    font-size: 40px;
+}
+.homebox16-h4{
+    position: absolute;
+    top: 148px;
+    right: 10px;
+    font-size: 20px;
+    
+    
+    
+}

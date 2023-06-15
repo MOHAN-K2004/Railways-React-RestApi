@@ -1,125 +1,194 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  
-  .loginback{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-   background: url("https://th.bing.com/th/id/R.cf7a248b2d576d7853e5ccb8afbcb0ae?rik=Cwls4iyNM2cbvA&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f0%2f74%2fA7lSeJ.jpg&ehk=v7lgzn2S4yuwWjRdiuYu1BRrnkyu7pQ0PLAyJkN%2fNF8%3d&risl=&pid=ImgRaw&r=0");
-   background-size: cover;
-  }
-  
-  .container {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    max-width: 300px;
-    background: linear-gradient(110deg, #3bacfd95 50%, #00ffc892 60%);
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Arvo:ital,wght@1,700&family=Caveat&family=Foldit:wght@600&family=Montserrat+Alternates&family=Pacifico&family=Philosopher:wght@700&family=Roboto:ital,wght@1,300&family=Slabo+27px&family=Source+Sans+Pro:wght@200&family=Source+Serif+Pro&family=Spectral:ital,wght@0,600;1,600&display=swap");
 
-    border-radius: 15px;
-    right: 100px;
-    bottom: 100px;
-  }
-  
-  
-  .login {
-    width: 400px;
-  }
-  
-  .login form {
-    width: 250px;
-    margin: 60px auto;
-  }
-  
-  .login h1 {
-    margin: 20px;
-    text-align: center;
-    font-weight: bolder;
-    text-transform: uppercase;
-  }
-  
-  .login hr {
-    border-top: 3px solid rgb(255, 55, 0);
-  }
-  
-  .login p {
-    text-align: center;
-    margin: 10px;
-    font-size: 13px;
-  }
-  
-  .login form label {
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 5px;
-    margin-top: 8px;
-  }
-  
-  .loginback .login input {
-    width: 100%;
-    margin: 2px;
-    border: none;
-    outline: none;
-    padding: 8px;
-    border-radius: 9px;
-    border: 1px solid gray;
-  }
-  
-  .signupbutton {
-  
-    border: none;
-    outline: none;
-    padding: 8px;
-    width: 100%;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 8px;
-    background: rgb(44, 125, 231);
-  }
-  
- .container .forget {
-    font-size: 12px;
-    margin-top: 16px;
-    text-align: right;
-    color: red;
-    position: absolute;
-    bottom: 15px;
-    left: 80px;
-    cursor: pointer;
-  }
-  
-  .loginback.login a {
-    text-decoration: none;
-    color: rgba(26, 255, 0, 0.818);
-    position: absolute;
-    bottom: 25px;
-  }
-  
-  .loginbutton  {
-    display: inline;
-    margin-bottom: cpx;
-    border: none;
-    outline: none;
-    padding: 8px;
-    width: 100%;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 8px;
-    background: rgb(60, 255, 0);
-  
-  }
-  .container .newuser{
-    position: absolute;
-    bottom: 87px;
-    font-size: 2px;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Arvo:ital,wght@1,700&family=Caveat&family=Foldit:wght@600&family=Maitree:wght@700&family=Montserrat+Alternates&family=Pacifico&family=Philosopher:wght@700&family=Roboto:ital,wght@1,300&family=Slabo+27px&family=Source+Sans+Pro:wght@200&family=Source+Serif+Pro&family=Spectral:ital,wght@0,600;1,600&display=swap");
+
+.loginAll7 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://th.bing.com/th/id/R.cf7a248b2d576d7853e5ccb8afbcb0ae?rik=Cwls4iyNM2cbvA&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f0%2f74%2fA7lSeJ.jpg&ehk=v7lgzn2S4yuwWjRdiuYu1BRrnkyu7pQ0PLAyJkN%2fNF8%3d&risl=&pid=ImgRaw&r=0");
+  position: absolute;
+  background-size: cover;
+}
+
+.loginAll7  .loginbackground7 {
+  position: absolute;
+  height: 500px;
+  top: 40px;
+  left: 0px;
+  border-radius: 20px;
+  /* background-clip: border-box; */
+  /* background-color: rgb(255, 0, 0); */
+}
+.loginAll7  h1 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 30px;
+}
+.loginAll7 h2 {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+
+  font-size: 1px;
+  font-family: "Source Serif Pro", serif;
+}
+.loginAll7  h3 {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  font-size: 4px;
+  font-family: "Source Serif Pro", serif;
+}
+.loginAll7  h4 {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  font-size: 4px;
+  font-family: "Source Serif Pro", serif;
+}
+.loginAll7  .contentborder7 h5 {
+  position: absolute;
+
+  left: 50px;
+  top: 303px;
+  font-size: 1px;
+  font-family: "Spectral", serif;
+}
+.loginAll7  .contentborder7 h6 {
+  position: absolute;
+
+  right: 40px;
+  top: 303px;
+  font-size: 1px;
+  font-family: "Source Serif Pro", serif;
+  color: red;
+  cursor: pointer;
+}
+.loginAll7  .contentborder7 h7 {
+  position: absolute;
+
+  left: 90px;
+  bottom: 70px;
+  font-size: 1px;
+  font-family: "Philosopher", sans-serif;
+
+  cursor: pointer;
+}
+.loginAll7  .contentborder7 h8 {
+  position: absolute;
+
+  left: 20px;
+  top: 144px;
+  font-size: 1px;
+  font-family: "Philosopher", sans-serif;
+
+  cursor: pointer;
+}
+.loginAll7  .contentborder7 h9 {
+  position: absolute;
+
+  left: 20px;
+  top: 220px;
+  font-size: 1px;
+  font-family: "Philosopher", sans-serif;
+
+  cursor: pointer;
+}
+
+.emailbutton7 {
+  position: absolute;
+  left: 20px;
+  color: black;
+  top: 170px;
+  height: 30px;
+  z-index: 2;
+  width: 290px;
+  border: none;
+  background-color: #dcd5ff;
+  border-radius: 2px;
+  border: 1px solid black;
+  text-indent: 30px;
+}
+.passwordbutton7 {
+  position: absolute;
+  left: 20px;
+  color: black;
+  top: 250px;
+  height: 30px;
+  z-index: 2;
+  width: 290px;
+  text-indent: 30px;
+  border: none;
+  background-color: #dcd5ff;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+.emailicon7 {
+  position: absolute;
+  left: 23px;
+  top: 174px;
+  z-index: 2;
+  color: rgb(19, 0, 128);
+}
+.passwordicon7 {
+  position: absolute;
+  left: 23px;
+  top: 252px;
+  z-index: 2;
+  color: red;
+}
+.rememberme7 {
+  position: absolute;
+  left: 20px;
+  top: 305px;
+  height: 20px;
+  width: 20px;
+  z-index: 2;
+  background-color: greenyellow;
+}
+
+.contentborder7 .loginbutton7 {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  width: 100px;
+}
+.contentborder7 .Signinbutton7 {
+  position: absolute;
+  bottom: 100px;
+  right: 40px;
+}
+.contentborder7 {
+  position: absolute;
+  height: 500px;
+  width: 350px;
+  top: 250px;
+  right: 60px;
+  border-radius: 20px;
+  background-color: #ffffff81;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.contentborder7 .googleicon7 {
+  position: absolute;
+  bottom: 25px;
+  left:159px;
+  color: red;
+  cursor: pointer;
+}
+.facebookicon7 {
+  position: absolute;
+  bottom: 25px;
+  left: 199px;
+  color: blue;
+  cursor: pointer;
+}
+.instagramicon7 {
+  position: absolute;
+  bottom: 25px;
+  left: 119px;
+  color: rgb(235, 0, 176);
+  cursor: pointer;
+}

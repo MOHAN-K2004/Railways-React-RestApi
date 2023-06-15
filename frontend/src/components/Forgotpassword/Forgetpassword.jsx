@@ -16,7 +16,7 @@ const Forgetpassword = () => {
             <label for="email">Email</label>
             <input type="email" placeholder="example@gmail.com" />
             <label for="password">Password</label>
-            <input type="Newpassword" placeholder="NewPassword" />
+            <input type="password" placeholder="NewPassword" />
 
             <button  className="reset">
               Resetpassword

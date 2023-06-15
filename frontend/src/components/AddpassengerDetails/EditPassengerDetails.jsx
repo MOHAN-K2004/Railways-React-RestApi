@@ -10,6 +10,7 @@ import "./EditpassengerDetails.css";
 
 
 import TableViewIcon from '@mui/icons-material/TableView';
+import { toast } from "react-hot-toast";
 
 function EditPassengerdetails() {
   const navigate = useNavigate();
@@ -61,10 +62,18 @@ function EditPassengerdetails() {
       })
       .then((res) => {
         console.log(res);
+        toast.success("Passenger Detail Updated")
+        navigate("/PassengerDetails");
       });
-      navigate("/PassengerDetails");
     };
-   
+    const labelStyle = {
+      fontFamily: "Popins",
+      fontSize: "16px",
+    };
+    const buttonStyle = {
+      fontFamily: "Arial",
+      fontSize: "16px",
+    };
     const gotoPassengerDetails = () => {
       navigate("/PassengerDetails");
     };
@@ -85,9 +94,7 @@ function EditPassengerdetails() {
                 label="Trainno"
                 value={trainno}
                 type="number"
-                InputLabelProps={{
-                  shrink: true,
-                }}
+                InputLabelProps={{ style: labelStyle }}
               />
             </div>
             <div className="passenger_name2">
@@ -99,6 +106,7 @@ function EditPassengerdetails() {
                 label="Name's"
                 value={passenger_name}
                 defaultValue=""
+                InputLabelProps={{ style: labelStyle }}
                 variant="outlined"
               />
             </div>
@@ -110,6 +118,7 @@ function EditPassengerdetails() {
                 className="travellingdate2"
                 label="Travel Date"
                 value={travelling_date}
+                InputLabelProps={{ style: labelStyle }}
                 defaultValue=""
                 variant="outlined"
               />
@@ -119,13 +128,12 @@ function EditPassengerdetails() {
               <TextField
                 className="no_of_adults"
                 id="filled-number"
+                InputLabelProps={{ style: labelStyle }}
                 onChange={(e) => setNoofadults(e.target.value)}
                 label="Adults"
                 value={no_of_adults}
                 type="number"
-                InputLabelProps={{
-                  shrink: true,
-                }}
+                
               />
             </div>
             <div className="no_of_childs2">
@@ -133,12 +141,11 @@ function EditPassengerdetails() {
                 onChange={(e) => setNoofchilds(e.target.value)}
                 className="no_of_childs2"
                 id="filled-number"
+                InputLabelProps={{ style: labelStyle }}
                 label="Childs"
                 value={no_of_childs}
                 type="number"
-                InputLabelProps={{
-                  shrink: true,
-                }}
+               
               />
             </div>
             <div className="passenger_age2">
@@ -151,6 +158,7 @@ function EditPassengerdetails() {
                 value={passenger_age}
                 defaultValue=""
                 variant="outlined"
+                InputLabelProps={{ style: labelStyle }}
               />
             </div>
             <div className="passenger_gender2">
@@ -163,6 +171,7 @@ function EditPassengerdetails() {
                 value={passenger_gender}
                 defaultValue=""
                 variant="outlined"
+                InputLabelProps={{ style: labelStyle }}
               />
             </div>
 
@@ -176,6 +185,7 @@ function EditPassengerdetails() {
                 value={prefered_coach}
                 defaultValue=""
                 variant="outlined"
+                InputLabelProps={{ style: labelStyle }}
               />
             </div>
             <div className="prefered_class2">
@@ -186,6 +196,7 @@ function EditPassengerdetails() {
                 className="prefered_class2"
                 label="Class"
                 value={prefered_class}
+                InputLabelProps={{ style: labelStyle }}
                 defaultValue=""
                 variant="outlined"
               />
@@ -199,6 +210,7 @@ function EditPassengerdetails() {
                 label="SeatNumber"
                 value={prefered_seat}
                 defaultValue=""
+                InputLabelProps={{ style: labelStyle }}
                 variant="outlined"
               />
             </div>
@@ -212,6 +224,7 @@ function EditPassengerdetails() {
                 value={depature}
                 defaultValue=""
                 variant="outlined"
+                InputLabelProps={{ style: labelStyle }}
               />
             </div>
             <div className="arrival2">
@@ -224,6 +237,7 @@ function EditPassengerdetails() {
                 value={arrival}
                 defaultValue=""
                 variant="outlined"
+                InputLabelProps={{ style: labelStyle }}
               />
             </div>
 
@@ -237,7 +251,7 @@ function EditPassengerdetails() {
               </div>
             <div className="savebutton">
               
-            <Button className="saving" variant="outlined" color="primary" onClick={()=>Passengerdetails(editPassenger.no)}>
+            <Button  style={buttonStyle} className="saving" variant="outlined"  onClick={()=>Passengerdetails(editPassenger.no)}>
               Update
            </Button>
             

@@ -24,6 +24,7 @@ const Userdetails = () => {
     console.log(mail);
     axios.delete(`/Signup/delete/${mail}`).then((res) => {
       getUserdetails();
+      alert("Delete the Account!");
     });
   };
   const gotoSignup = () => {
@@ -60,7 +61,6 @@ const Userdetails = () => {
             <th>City</th>
             <th>State    .</th>
             <th>Nationality</th>
-            <th>Password</th>
             <th>Delete</th>
           </tr>
           <br />
@@ -79,7 +79,6 @@ const Userdetails = () => {
                 <td>{user.city}</td>
                 <td>{user.state}</td>
                 <td>{user.nationality}</td>
-                <td>{user.pass}</td>
                 <td>
                   <div
                     className="deleteicon"
