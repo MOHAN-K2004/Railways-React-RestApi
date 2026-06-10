@@ -21,7 +21,7 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
-# Copy backend jar
+# Copy backend
 COPY --from=backend-build /app/backend/target/*.jar app.jar
 
 # Copy frontend build
